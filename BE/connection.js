@@ -17,6 +17,6 @@ mysqlConnection.connect((err)=>{
     }
 })
 
-//Pavel a fost Aici..n0a facut nmk
+
 
 module.exports = mysqlConnection;
