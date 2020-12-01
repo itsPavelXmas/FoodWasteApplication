@@ -1,3 +1,5 @@
+
+//connection to mysql db
 var mysqlConnection = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -5,7 +7,6 @@ var mysqlConnection = mysql.createConnection({
     database: "FoodWastedDB",
     multipleStatements: true
 });
-
 
 mysqlConnection.connect((err)=>{
     if(!err){
