@@ -7,7 +7,7 @@ CREATE TABLE LT_USER_ROLES(
 );
 
 CREATE TABLE User (
-id INT NOT NULL,
+id int auto_increment,
 first_name VARCHAR(30) NOT NULL,
 last_name VARCHAR(30) NOT NULL,
 role_id INT NOT NULL,
@@ -18,7 +18,7 @@ password VARCHAR(30) NOT NULL,
 email VARCHAR(50),
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 PRIMARY KEY (id),
-FOREIGN KEY (role_id) REFERENCES LT_USER_ROLES(id)
+
 );
 
 
@@ -27,13 +27,13 @@ CREATE TABLE LT_REQUEST_STATUS (
     description VARCHAR(30) NOT NULL);
 
 CREATE TABLE Request (
-    id INT NOT NULL,
-    type VARCHAR(20) NOT NULL,
+   id int auto_increment,
+    request_type VARCHAR(20) NOT NULL,
     user_id INT(6) NOT NULL,
     location VARCHAR(50) NOT NULL,
     quantity FLOAT NOT NULL,
     status_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES  User(id),
-    FOREIGN KEY (status_id) REFERENCES LT_REQUEST_STATUS(id)
+   
 );
