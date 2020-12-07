@@ -1,7 +1,5 @@
-const mysql = require('mysql');
-const jwt=require('jsonwebtoken');
 const express = require('express');
-const mysqlConnection = require('./connection')
+require('./src/database/connection')
 var app = express();
 const userRouter=require("./routes/user.route");
 const requestRouter = require('./routes/request.route');
@@ -19,7 +17,3 @@ app.use(express.urlencoded( {
 }));
 
 app.listen(3000);
-
-
-
-
