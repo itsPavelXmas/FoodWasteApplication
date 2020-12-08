@@ -14,12 +14,13 @@ module.exports = sequelize.define("Prospect", {
         allowNull:false
     },
     password:{
-        type:Sequelize.STRING(50),
+        type:Sequelize.STRING(255),
         allowNull:false
     },
     userId:{
         type:Sequelize.INTEGER,
-        allowNull:true
+        allowNull:true,
+        defaultValue:null
     }
 
 })

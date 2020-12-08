@@ -12,32 +12,36 @@ module.exports = {
         email:{
         type:Sequelize.STRING(30),
         allowNull:true,
-        unique:true
+        unique:true,
+        defaultValue:null
       },
         cnp:{
         type:Sequelize.STRING(13),
         allowNull:true,
-        unique:true
+        unique:true,
+        defaultValue:null
       },
         name:{
         type:Sequelize.STRING(50),
-        allowNull:true
+        allowNull:true,
+        defaultValue:null
       },
         surrname:{
         type:Sequelize.STRING(50),
-        allowNull:true
+        allowNull:true,
+        defaultValue:null
       },
         address:{
         type:Sequelize.STRING(50),
-        allowNull:true
+        allowNull:true,
+        defaultValue:null
       },
         series:{
         type:Sequelize.STRING(50),
         allowNull:true,
-        unique:true
-      },
-      createdAt:Sequelize.DATE,
-      updatedAt:Sequelize.DATE
+        unique:true,
+        defaultValue:null
+      }
     })
   },
 

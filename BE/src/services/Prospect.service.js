@@ -1,13 +1,12 @@
+const sequelize = require("../database/connection");
 const Prospect=require("../models/Prospect");
-
-module.exports={
     
-    createProspect: (data)=>{
+   const createProspect = async (data) => {
         try{
-           let prospect = await Prospect.create({
-                email: data.email,
-                password: data.password
-            })
+            Prospect.sync()
+           let prospect = await Prospect.build({email:data.email, password:data.password.toString()});
+           prospect.save();
+           console.log(prospect)
             return prospect
         } catch(e){
             throw e;
@@ -15,4 +14,5 @@ module.exports={
        
     }
 
-}
+    module.exports ={createProspect}
+

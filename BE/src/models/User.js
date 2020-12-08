@@ -36,6 +36,4 @@ module.exports = sequelize.define("User", {
         allowNull:true,
         unique:true
     }
-
-
 })
