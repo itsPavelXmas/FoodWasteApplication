@@ -12,6 +12,7 @@
     "i": "^0.3.6",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.2.5",
+    "mysql8": "^2.17.3",
     "npm": "^6.14.9",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
