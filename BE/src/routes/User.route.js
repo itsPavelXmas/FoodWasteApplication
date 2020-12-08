@@ -1,6 +1,7 @@
-const{addUser}=require("../controllers/user.controller");
-const router=require("express").Router();
+var express = require('express');
+var router = express.Router();
+const ProspectController = require("../controllers/Prospect.controller");
 
-router.post("/register",addUser)
+router.post('/register',ProspectController.register);
 
-module.exports=router;
+module.exports = router;
