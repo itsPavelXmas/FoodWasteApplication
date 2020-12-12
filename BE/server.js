@@ -1,12 +1,12 @@
 const express = require('express');
 require('./src/database/connection')
 var app = express();
-const userRouter=require("./src/Routes/User.route");
+const prospectRouter=require("./src/Routes/Prospect.route");
 
 app.use(express.json());
 
 
-app.use("/api/user",userRouter);
+app.use("/api/auth",prospectRouter);
 
 
 app.use(express.urlencoded( {

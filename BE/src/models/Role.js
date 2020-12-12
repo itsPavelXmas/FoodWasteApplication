@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../database/connection");
 
-module.exports = sequelize.define("prospects", {
+module.exports = sequelize.define("roles", {
 
     id:{
         type:Sequelize.INTEGER,
@@ -9,18 +9,8 @@ module.exports = sequelize.define("prospects", {
         autoIncrement: true,
         primaryKey: true
     },
-    email:{
+    description:{
         type:Sequelize.STRING(30),
         allowNull:false
-    },
-    password:{
-        type:Sequelize.STRING(255),
-        allowNull:false
-    },
-    userId:{
-        type:Sequelize.INTEGER,
-        allowNull:true,
-        defaultValue:null
     }
-
 })
