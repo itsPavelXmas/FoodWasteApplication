@@ -35,5 +35,9 @@ module.exports = sequelize.define("users", {
         type:Sequelize.STRING(50),
         allowNull:true,
         unique:true
+    },
+    roleId:{
+        type:Sequelize.INTEGER,
+        allowNull:true,
     }
 })
