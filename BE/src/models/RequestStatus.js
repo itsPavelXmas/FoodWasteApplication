@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../database/connection");
 
-module.exports = sequelize.define("lt_request_status", {
+module.exports = sequelize.define("lt_request_statuses", {
 
     id:{
         type:Sequelize.INTEGER,

@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-      return queryInterface.bulkInsert('lt_request_status', [{
+      return queryInterface.bulkInsert('lt_request_statuses', [{
         description: 'Pending',
         createdAt: new Date(),
         updatedAt: new Date()
@@ -25,6 +25,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('roles', null, {});
+    return queryInterface.bulkDelete('lt_request_statuses', null, {});
   }
 };

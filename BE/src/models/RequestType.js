@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../database/connection");
 
-module.exports = sequelize.define("lt_request_type", {
+module.exports = sequelize.define("lt_request_types", {
 
     id:{
         type:Sequelize.INTEGER,

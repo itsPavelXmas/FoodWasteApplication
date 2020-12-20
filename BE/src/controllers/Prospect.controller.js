@@ -1,8 +1,5 @@
 const ProspectService=require("../services/Prospect.service");
 const {hashSync, genSaltSync, compareSync}=require("bcrypt");
-const UserService = require("../services/User.service")
-const { response } = require("express");
-const Prospect = require("../models/Prospect");
 const { sign } = require("jsonwebtoken");
 
 
@@ -23,6 +20,7 @@ const { sign } = require("jsonwebtoken");
                 
             }
             catch(error){
+                console.log(error)
                     return response.status(409).json({msg:"bad request"})
             }
         }

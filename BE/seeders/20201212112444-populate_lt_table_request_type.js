@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-      return queryInterface.bulkInsert('lt_request_type', [{
+      return queryInterface.bulkInsert('lt_request_types', [{
         description: 'Donation',
         createdAt: new Date(),
         updatedAt: new Date()
@@ -15,6 +15,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('lt_request_type', null, {});
+    return queryInterface.bulkDelete('lt_request_types', null, {});
   }
 };

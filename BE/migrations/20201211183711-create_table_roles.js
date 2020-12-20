@@ -14,7 +14,7 @@ module.exports = {
           type:Sequelize.STRING(30),
           allowNull:false
       },
-      creareturntedAt:{
+      createdAt:{
         type:Sequelize.DATE
        },
       updatedAt:{

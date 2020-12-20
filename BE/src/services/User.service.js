@@ -24,7 +24,7 @@ const getUserByEmail = async (data) => {
     try{
         let user = await User.findOne({
             where:{email:data.email}})
-
+            return user
     }catch(error){
         throw error
     }
