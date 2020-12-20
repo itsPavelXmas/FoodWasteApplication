@@ -1,32 +1,10 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "test",
-    "database": "FoodWasteDb",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port":"3306"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-=======
     "password": "paROla2683",
     "database": "FoodWasteDb",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "port":3306
->>>>>>> 1d146c11b0e94c72385da64257f2f2df89b5819c
   }
 }
