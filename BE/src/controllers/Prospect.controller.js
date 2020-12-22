@@ -23,6 +23,7 @@ const { sign } = require("jsonwebtoken");
                 
             }
             catch(error){
+                console.log(error)
                     return response.status(409).json({msg:"bad request"})
             }
         }
