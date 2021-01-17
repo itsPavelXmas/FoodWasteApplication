@@ -15,6 +15,7 @@ catch(e){
 
 const getUser= async(require,response)=>{
     const body=require.body
+    console.log(body);
     try{
         let user=await UserService.getUserByEmail(body)
         //console.log(user);

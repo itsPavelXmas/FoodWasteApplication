@@ -1,7 +1,7 @@
 const Sequelize=require("sequelize");
 const sequelize=require('../database/connection');
 
-module.exports=sequelize.define("Request", {
+module.exports=sequelize.define("requests", {
 
         id:{
             type:Sequelize.INTEGER,
@@ -19,7 +19,10 @@ module.exports=sequelize.define("Request", {
             type:Sequelize.INTEGER,
             allowNull:false
         },
-
+        requestStatus:{
+            type:Sequelize.INTEGER,
+            allowNull:false,
+        },
         userId:{
             type:Sequelize.INTEGER,
             allowNull:false
@@ -29,7 +32,10 @@ module.exports=sequelize.define("Request", {
             type:Sequelize.FLOAT,
             allowNull:false
         },
-
+        description:{
+            type:Sequelize.STRING,
+            allowNull:false
+        },
         location:{
             type:Sequelize.STRING(50),
             allowNull:false

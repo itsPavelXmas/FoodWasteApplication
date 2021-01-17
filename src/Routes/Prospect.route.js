@@ -1,7 +1,7 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 const ProspectController = require("../controllers/Prospect.controller");
 
 router.post('/register',ProspectController.register);
-router.get('/login',ProspectController.login);
+router.post('/login',ProspectController.login);
 module.exports = router;

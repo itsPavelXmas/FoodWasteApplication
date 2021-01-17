@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 const {checkToken}=require("../authValidation/tokenValidation");
 const RequestStatusController = require('../controllers/RequestStatus.controller');
 const RequestTypeController = require('../controllers/RequestType.controller');
