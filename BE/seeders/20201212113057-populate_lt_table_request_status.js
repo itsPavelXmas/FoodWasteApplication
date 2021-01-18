@@ -2,7 +2,13 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-      return queryInterface.bulkInsert('lt_request_statuses', [{
+      return queryInterface.bulkInsert('lt_request_statuses', [
+        {
+          description: 'NEW',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        }
+        ,{
         description: 'Pending',
         createdAt: new Date(),
         updatedAt: new Date()
