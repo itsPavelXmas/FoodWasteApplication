@@ -8,6 +8,8 @@ Assigned roles:
 
 • Front-End: ALL
 
+Introduction:
+
 Due to the fact that edible food is discarded at every point along the food chain: on farms and fishing boats, during processing and distribution, in retail stores, in restaurants and of course, at home, the purpose of the application is regarded as a main core of communication between NGOs, businesses and civilians to help manage food surplus in order to assure the distribution for those in need.
 
 We want to put an end to food waste by creating an environment where food produced is food consumed.
